@@ -5,5 +5,4 @@ import react from "@vitejs/plugin-react";
 // If your repo is github.com/FahadRahman5/guardian-mesh-web, keep this as-is.
 export default defineConfig({
   plugins: [react()],
-  base: "/guardian-mesh-web/",
 });
