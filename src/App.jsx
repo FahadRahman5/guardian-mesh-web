@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import Landing from "./Landing";
 import Simulator from "./Simulator";
 
@@ -106,6 +107,7 @@ export default function App() {
       {warp && (
         <WarpController dir={warp} onHalf={onWarpHalf} onEnd={() => { setWarp(null); pendingRoute.current = null; }} />
       )}
+      <Analytics />
     </>
   );
 }
